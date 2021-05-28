@@ -1,0 +1,39 @@
+<div class="table">
+<table *ngIf="delivery; else loading">
+  <thead>
+    <tr>
+      <th>Status</th>
+      <th>Date Delivered</th>
+      <th>Date Order</th>
+      <th>id</th>
+      <th>Client ID</th>
+      <th>Client</th>
+      <th>Nome Recibido</th>
+      <th>Rua Recibido</th>
+      <th>Número Recibido</th>
+      <th>Occurrences</th>
+      <th>Distrito Recibido</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of delivery">
+      <td>{{ item.status }}</td>
+      <td>{{ item.dateDelivered }}</td>
+      <td>{{ item.dateOrder }}</td>
+      <td>{{ item.id }}</td>
+      <td>{{ item.client.id }}</td>
+      <td>{{ item.client.name }}</td>
+      <td>{{ item.recipient.name }}</td>
+      <td>{{ item.recipient.street }}</td>
+      <td>{{ item.recipient.number }}</td>
+      <td><a href="https://foop-delivery-api.herokuapp.com/delivery/{{item.id}}/occurrences">{{item.id}}</a></td>
+      <td>{{ item.recipient.district }}</td>
+  </tbody>
+</table>
+
+<ng-template #loading>
+  <mat-spinner></mat-spinner>
+</ng-template>
+</div>
+
+

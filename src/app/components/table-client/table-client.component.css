@@ -1,0 +1,40 @@
+.table {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+
+table button {
+  margin: 0px;
+}
+
+table th:first-child {
+  width: 10%;
+}
+
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+button {
+  margin: 20px 5px;
+}
+
+a {
+  margin-right: 20px;
+}
+
+a:first-child {
+  margin-left: 16px;
+  color: red;
+}

@@ -1,0 +1,30 @@
+<div class="backgroud">
+  <h1>Atualizar usuário</h1>
+    <div class="label" *ngIf="request">
+      <label>
+        ID:
+        <input placeholder="ID" [(ngModel)]="request.id" />
+      </label>
+      <label>
+        Name:
+        <input placeholder="Name" [(ngModel)]="request.name" />
+      </label>
+      <label>
+        Email:
+        <input placeholder="Email" [(ngModel)]="request.email" />
+      </label>
+      <label>
+        Telephone:
+        <input placeholder="Telephone" [(ngModel)]="request.telephone" />
+      </label>
+    </div>
+  
+    <div class="btn">
+      <button mat-raised-button color="primary" routerLink="components/client-update/{{id}}" (click)="update()">
+      Atualizar
+      </button>
+      <button mat-stroked-button routerLink="/">Cancelar</button>
+  
+    </div>
+  </div>
+  

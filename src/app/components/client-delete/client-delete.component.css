@@ -1,0 +1,37 @@
+.backgroud {
+  width: 100vw;
+  height: 518px;
+  background: #FAFAFA;
+  align-items: center;
+  text-align: center;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  position: relative;
+  width: 20%;
+  display: block;
+  justify-content: center;
+  align-items: center;
+}
+
+label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+input {
+  width: 180px;
+}
+
+.btn {
+  margin-top: 20px;
+}
+
+button {
+  display: absolute;
+  margin-right: 12px;
+}

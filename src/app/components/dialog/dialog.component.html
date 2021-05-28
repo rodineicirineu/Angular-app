@@ -1,0 +1,20 @@
+<div class="display">
+<h1 mat-dialog-title>Hi Sr</h1>
+<label> ID:
+  <input placeholder="ID" [(ngModel)]="request.id">
+</label>
+<label> Name:
+  <input placeholder="Name" [(ngModel)]="request.name">
+</label>
+<label> Email:
+  <input placeholder="Email" [(ngModel)]="request.email">
+</label>
+<label> Telephone:
+  <input placeholder="Telephone" [(ngModel)]="request.telephone">
+</label>
+</div>
+
+<div mat-dialog-actions class="btn">
+  <button mat-raised-button color="primary" (click)="save()">Adicionar</button>
+  <button mat-raised-button (click)="cancel()">Cancelar</button>
+</div>
